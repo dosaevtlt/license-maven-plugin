@@ -106,8 +106,18 @@
       <id>github</id>
       <url>scm:git:git@github.com:mojohaus/license-maven-plugin.git</url>
     </site>
+	<repository>
+	  <id>releases</id>
+	  <name>Internal Releases</name>
+	  <url>http://javaone.comsoft:8080/nexus/content/repositories/releases</url>
+	</repository>
+	<snapshotRepository>
+	  <id>snapshots</id>
+	  <name>Internal Snapshots</name>
+	  <url>http://javaone.comsoft:8080/nexus/content/repositories/snapshots</url>
+	</snapshotRepository>
   </distributionManagement>
-
+  
   <properties>
     <mavenVersion>2.2.1</mavenVersion>
     <mojo.java.target>1.5</mojo.java.target>
